@@ -10,7 +10,7 @@ The application will show the news of different news houses. It will makes use o
 * Navigate through the program.
 * Make your significant additions
 ## Behaviour Driven Developement
-**On loading the page**
+*On loading the page*
 * One should see the home page with newd from different news broadcasting houses.
 
 **On clicking views**
