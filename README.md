@@ -16,7 +16,7 @@ The application will show the news of different news houses. It will makes use o
 **On clicking views**
 
 * The user user is redirected to a page with the news of that particular news house
-**Page items**
+**Page items*
 
 * The page will have a photo and a clickable title and some artical detail
 
