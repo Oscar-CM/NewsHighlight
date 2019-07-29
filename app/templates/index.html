@@ -1,0 +1,22 @@
+
+{% extends 'base.html'%}
+{%block content%}
+{% block styles%}
+    {{ super() }}
+    {% endblock %}
+    <h2>News Sources</h2>
+    <ul>
+    {%for newsSource in sources%}
+    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+        <div class="card" style="border-bottom: 1px solid rgb(48, 51, 253);">
+          <div class="card-heading" style="background-color:rgb(135, 151, 222); color: black; font-size: 18px;">{{newsSource.name}}</div>
+          <div class="card-body" style="font-size: 16px;">
+            <p>{{newsSource.description | truncate(100)}}</p>
+            <a href="/articles/{{newsSource.id}}" class="btn" style="color: rgb(144, 135, 222); background-color: rgb(53, 26, 42);">View</a>
+          </div>
+        </div>
+</div>
+
+    {%endfor%}
+    </ul>
+{%endblock%}

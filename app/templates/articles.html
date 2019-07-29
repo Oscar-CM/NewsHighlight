@@ -1,0 +1,23 @@
+
+{% extends 'base.html'%}
+{%block content%}
+{% block styles%}
+    {{ super() }}
+    {% endblock %}
+<ul>
+{%for article in articles%}
+<div class="row">
+
+    <h1><a href="{{article.url}}">{{article.title}}</a></h1>
+   
+    <p> <img src="{{article.urlToImage}}" class="img-fluid"/></p>
+<h3>source: {{article.source.name}} Author: {{article.author }} </h3>
+<p>{{article.description}}</p>
+<p>time of publishing:  {{ article.publishedAt}}</p>
+</div>
+
+
+
+{%endfor%}
+</ul>
+ {% endblock %}
