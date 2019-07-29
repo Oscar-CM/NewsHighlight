@@ -7,13 +7,17 @@
 <ul>
 {%for article in articles%}
 <div class="row">
-
+<div class="card">
+    <div class="card-heading">
     <h1><a href="{{article.url}}">{{article.title}}</a></h1>
+</div>
+
    
     <p> <img src="{{article.urlToImage}}" class="img-fluid"/></p>
 <h3>source: {{article.source.name}} Author: {{article.author }} </h3>
 <p>{{article.description}}</p>
 <p>time of publishing:  {{ article.publishedAt}}</p>
+</div>
 </div>
 
 
