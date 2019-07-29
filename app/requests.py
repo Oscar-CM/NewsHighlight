@@ -65,20 +65,3 @@ def get_articles(id):
            
     return articles_results
 
-
-def process_article_results(articles_list):
-
-    articles_results = []
-    for article_item in articles_list:
-        source=article_item.get('source')
-        author=article_item.get('author')
-        title=article_item.get('title')
-        description=article_item.get('description')
-        url=article_item.get('url')
-        urlToImage=article_item.get('urlToImage')
-        publishedAt=article_item.get('publishedAt')
-
-
-        articles_object = Articles(source,author,title,description,url,urlToImage,publishedAt)
-        articles_results.append(articles_object)
-    return articles_results
